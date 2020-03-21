@@ -1,3 +1,5 @@
+# Google
+# ----------------------------------------------------------------
 # 快速檢索特性:
 # DP Dynamic Programming (動態規劃) / BFS Breadth-First Search 廣度優先
 # dictionary/Hash map (使用Dictionary 比 2D Array 快)
