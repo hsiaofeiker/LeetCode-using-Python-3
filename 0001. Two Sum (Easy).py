@@ -4,7 +4,6 @@
 # class Solution: 寫法 , 底下主程式部分要 a = Solution() , 然後再呼叫 a.twoSum(x,y)...
 # 變數difference in nums(Array) 這樣沒有此數,並不會出現Error.
 # nums.index(某數) -> 直接回傳 Array中的位置
-#
 # ----------------------------------------------------------------
 #
 # 原題
