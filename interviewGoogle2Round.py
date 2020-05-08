@@ -1,11 +1,12 @@
 # Given a file consisting of lines like this:
 # 2017-02-01T20:00 OperationA Start
-# 2017-02-01T20:01 OperationA End  … 1 min
+# 2017-02-01T20:01 OperationA End
 # 2017-02-01T20:08 OperationB Start
 # 2017-02-01T20:09 OperationC Start
-# 2017-02-01T20:10 OperationB End … 2 Min
-# 2017-02-01T20:12 OperationC End ..3 min
+# 2017-02-01T20:10 OperationB End
+# 2017-02-01T20:12 OperationC End
 # 2017-02-01T20:09 OperationCCC Start
+# 2020-02-01T2!:10 OperationCCC End
 
 # Produce an average runtime of all operations.
 # Example output:
