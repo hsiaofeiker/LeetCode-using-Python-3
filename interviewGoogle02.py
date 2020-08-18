@@ -3,8 +3,8 @@
 # Write two functions setValue and sum.
 # setValue will be pass in x, y and Value.
 # sum function will be pass in x1,x2,y1,y2 and sum the items between those two point.
-# setValue(x1,y1,value)
-# sum(x1,x2,y1,y2)
+# setValue(x1,y1,value) 在指定的 x,y位置上,填入數值
+# sum(x1,x2,y1,y2) 把 x1,y1 到x2,y2的長方形內的數字加起來
 
 def setValue(x:int,y:int,value:int)->bool:
     if x >= len(matrixV) or y>= len(matrixV[0]) or x<0 or y<0 :
@@ -41,21 +41,15 @@ matrixV =  [[1,1,1,1,1, 1,1,1,1,1],
             [1,1,1,1,1, 1,1,1,1,1],
             [1,1,1,1,1, 1,1,1,1,1]]
 
-x,y = 9,9
+x,y = 3,3
 value = 1
 if setValue( x,y,value ) == False:
     print(' fail to input the Value:',value,' at',x,',',y)
 
 x1,y1=0,0
-x2,y2=9,10
+x2,y2=7,7
 ans=sumAll(x1,y1,x2,y2)
 if ans!=False:
-    print('from (',x1,',',y1,')to(',x2,',',y2,'), the sum of those cells:',)
+    print('from (',x1,',',y1,')to(',x2,',',y2,'), the sum of those cells:',ans)
 else:
     print(' input out of range!')
-
-
-
-
-
-
