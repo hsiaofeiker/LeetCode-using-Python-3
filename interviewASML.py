@@ -9,9 +9,11 @@
 # 2. 從陸地開始右下左上的延伸是否為同一塊
 # 3. 跑完迴圈 告知有多少陸地
 
-landmap = [[1,1,0],
-           [1,0,1],
-           [0,0,0]]
+landmap = [[1,1,1,1,1],
+           [1,0,0,0,1],
+           [1,0,1,0,1],
+           [1,0,0,0,1],
+           [1,1,1,1,1]]
 
 landStartNum,landEndNum = 10000,10000
 
@@ -29,7 +31,7 @@ for i in range( len(landmap)):
             landEndNum = landEndNum+1
             chkNear(landmap,i,j,landEndNum)
         if landmap[i][j] != 0:
-            print(landEndNum-landStartNum,end='\t')
+            print(landmap[i][j]-landStartNum,end='\t')
         else:
             print(0,end='\t')
     print()
