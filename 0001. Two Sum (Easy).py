@@ -30,12 +30,14 @@ class Solution:
 
         for i in range(len(nums)):
 
-            differce = target - nums[i]
+            difference = target - nums[i]
             # 變數 difference = 目標值 - 第i位數,
             # 然後直接搜尋是否有這個 difference差值, 且這個difference在Array的位置,不能等於i位
             # 成立的話,回傳, 不成立,i換下一位再試看看
-            if differce in nums and nums.index(differce) != i:
-                return [i, nums.index(differce)]
+            if difference in nums and nums.index(difference) != i:
+                return [i, nums.index(difference)]
+            # 這方法很直接, 但是缺點是 因為每次計算完, 若沒符合, 計算過的東西. 就直接丟棄,沒放到記憶體中
+            #若是用個 dictionary map 來保留在記憶體中, 那麼 未來搜尋起來就會快很多.
 
 numbers=[2,2,7,11,15]
 target = 4
